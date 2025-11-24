@@ -1,0 +1,25 @@
+# Documentation — Banker's Algorithm C++ Program
+
+## 1. Overview
+
+The Banker’s Algorithm is a resource-allocation and deadlock-avoidance algorithm.  
+It checks whether granting resources to processes can still leave the system in a **safe state**, meaning all processes can complete.
+
+This program:
+- Reads Allocation, Max, and Available information from a text file.
+- Computes Need = Max − Allocation.
+- Simulates process execution to find a safe ordering.
+
+---
+
+## 2. Input File Format
+
+The input file must contain:
+
+1. `n m`  
+   - n = number of processes  
+   - m = number of resource types  
+
+2. Next `n` lines: Allocation matrix  
+3. Next `n` lines: Max matrix  
+4. Final line: Available vector  
